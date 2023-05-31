@@ -1,0 +1,62 @@
+main {
+  margin-top: 5rem;
+  padding: 2rem;
+  img {
+    object-fit: cover;
+  }
+  .section-title {
+    text-align: center;
+    color: green;
+  }
+  .section-subtitle {
+    color: black;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .servicescontainerone,
+  .servicecontainertwo {
+    margin: 0 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7rem;
+    row-gap: 0;
+    div {
+      p {
+        margin-left: 3.5rem;
+        line-height: 1.7rem;
+      }
+      div {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+      img {
+        transform: scale(0.8);
+      }
+    }
+  }
+  .foodcardcontainer {
+    margin-top: 3rem;
+    background-color: grey;
+    padding: 0 5rem;
+
+    .foodcardsubcontainer {
+      background-color: white;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      .foodcarditems {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 0.5rem;
+        img {
+          object-fit: cover;
+          height: 50%;
+          min-width: 100%;
+        }
+      }
+    }
+  }
+}

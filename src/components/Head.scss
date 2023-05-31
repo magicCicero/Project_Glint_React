@@ -1,0 +1,30 @@
+header {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  text-align: center;
+  p {
+    font-weight: 600;
+  }
+  section {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    div {
+      border-right: 1px solid white;
+      padding: 0 5rem;
+      p {
+        font-weight: 700;
+      }
+    }
+    div:last-of-type {
+      border-right: unset;
+    }
+  }
+}
